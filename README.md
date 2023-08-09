@@ -9,8 +9,5 @@ Estas son las propiedades que te permite modificar la librería (por ahora):
 - mochilakarel = Cantidad de zumbadores en la mochila de karel al iniciar el mundo. -1 representa infinito.
 - width = Ancho del mundo.
 - height = Altura del mundo.
-- beepers = Cada elemento del vector es una celda que contiene zumbadores.
-- Los primeros dos valores son las coordenadas, y el tercero la cantidad de zumbadores.
-- paredes = Sean {x, y, z} los valores de un elemento del vector. 
-- Cada elemento del vector representa una celda con coordenadas (x, y),
-- que tiene una pared a la derecha si z tiene el bit 0 encendido y una pared a la arriba si z tiene el bit 1 encendido.
+- beepers = Es un vector de arrays que te permite determinar los zumbadores en el mundo. Cada elemento del vector es una celda que contiene zumbadores. Los primeros dos valores son las coordenadas, y el tercero la cantidad de zumbadores.
+- paredes = Es un vector de arrays que te permite determinar las paredes en el mundo. Sean {x, y, z} los valores de un elemento del vector. Cada elemento del vector representa una celda con coordenadas (x, y), que tiene una pared a la derecha si z tiene el bit 0 encendido y una pared a la arriba si z tiene el bit 1 encendido.

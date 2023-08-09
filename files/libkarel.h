@@ -9,7 +9,7 @@ class Mundo {
    * xKarel = Coordenada x de karel.
    * yKarel = Coordenada y de karel.
    * direccionKarel = Direccion a la que apunta karel, tiene un valor entero entre 1 y 4.
-   * mochilakarel = Cantidad de zumbadores en la mochila de karel al iniciar el mundo. -1 representa infinito.
+   * mochilaKarel = Cantidad de zumbadores en la mochila de karel al iniciar el mundo. -1 representa infinito.
    * width = Ancho del mundo.
    * height = Altura del mundo.
    * beepers = Cada elemento del vector es una celda que contiene zumbadores.

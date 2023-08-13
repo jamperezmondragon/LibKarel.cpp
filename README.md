@@ -1,7 +1,7 @@
 # LibKarel.cpp
 Librería en C++ para generar y procesar casos de Karel.
-Gracias a la ayuda de [LeoT121](https://github.com/LeoT121) y a Cesar Cépeda por la [documentación](https://github.com/ComiteMexicanoDeInformatica/OMI-2023/blob/main/documentacion_mundos_karel.md
-) del formato.
+Gracias a la ayuda de Cesar Cépeda por la [documentación](https://github.com/ComiteMexicanoDeInformatica/OMI-2023/blob/main/documentacion_mundos_karel.md
+) del formato, y a [LeoT121](https://github.com/LeoT121) por ayudarme con el esqueleto del programa.
 
 Basta con descargar el repositorio, e incluir el archivo libkarel.h en su código. Esto le da acceso a la clase `Mundo`, donde fácilmente puede editar las carácterísticas de un mundo de karel en c++. 
 También, le permite imprimir el mundo en formato XML a cualquier archivo, para ser usado en karel.js, omegaup u otras plataformas.

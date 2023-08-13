@@ -4,7 +4,7 @@ Gracias a la ayuda de [LeoT121](https://github.com/LeoT121) y a Cesar Cépeda po
 ) del formato.
 
 Basta con descargar el repositorio, e incluir el archivo libkarel.h en su código. Esto le da acceso a la clase `Mundo`, donde fácilmente puede editar las carácterísticas de un mundo de karel en c++. 
-También, le permite imprimr el mundo en formato XML, para ser usado en karel.js, omegaup u otras plataformas.
+También, le permite imprimir el mundo en formato XML a cualquier archivo, para ser usado en karel.js, omegaup u otras plataformas.
 Estas son las propiedades que te permite modificar la librería (por ahora):
 - xKarel = Coordenada x de karel.
 - yKarel = Coordenada y de karel.

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <array>
+#include <cassert>
 using namespace std;
 
 class MundoKarel {
@@ -11,7 +12,7 @@ class MundoKarel {
    *
    * xKarel = Coordenada x de karel. Por default es 1.
    * yKarel = Coordenada y de karel. Por default es 1.
-   * direccionKarel = Direccion a la que apunta karel, tiene un valor entero entre 1 y 4.
+   * direccionKarel = Direccion a la que apunta karel, tiene un valor entero entre 1 y 4. Por default es 0, es decir Norte.
    * mochilakarel = Cantidad de zumbadores en la mochila de karel al iniciar el mundo. -1 representa infinito.
    * width = Ancho del mundo. Por default el ancho es 100.
    * height = Altura del mundo. Por default el ancho es 100.
@@ -31,7 +32,7 @@ class MundoKarel {
   public:
     int xKarel = 1;
     int yKarel = 1;
-    int direccionKarel;
+    int direccionKarel = 0;
     string direciones[4] = {"NORTE", "ESTE", "SUR", "OESTE"};
     int mochilaKarel = 0;
     int width = 100, height = 100;

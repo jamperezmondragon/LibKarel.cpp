@@ -21,7 +21,7 @@ Estas son las propiedades que te permite modificar la librería (por ahora):
 - `tipo` = Es un índice que representa el tipo de despliegue. Por default es 0, es decir el tipo default es "MUNDO".
 - `Tipos` = las strings correspondientes al arreglo anterior.
 - Hay una matriz de `width * height`, llamada `Beepers`, donde `Beepers[x][y]` representa la cantidad de beepers en la posición (x, y).
-- Se puede controlar dicha matriz más fácilmente mediante la función `addBeeper(x, y)`.
+- Se puede controlar dicha matriz más fácilmente mediante la función `addBeeper(x, y, c)` que añade c beepers a la posición (x, y).
 - Función `setWall(x, y, t)`: Lo que hace es agregar una pared a la posición (x, y).
   `t = 0` indica la pared norte, y los valores continuan en orden anti horario.
 - Función `unsetWall(x, y, t)`: Lo que hace es quitar una pared a la posición (x, y).

@@ -105,6 +105,7 @@ class MundoKarel {
       for (int i = 1; i <= width; i++) {
         for (int j = 1; j <= height; j++) {
           if (Beepers[i][j] != 0) beepers.push_back({i, j, Beepers[i][j]});
+          assert(Beepers[i][j] >= 0);
           if (Paredes[i][j] != 0) paredes.push_back({i, j, Paredes[i][j]});
         }
       }

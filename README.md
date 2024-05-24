@@ -3,7 +3,7 @@ Librería en C++ para generar y procesar casos de Karel.
 Gracias a la ayuda de Cesar Cépeda por la [documentación](https://github.com/ComiteMexicanoDeInformatica/OMI-2023/blob/main/documentacion_mundos_karel.md
 ) del formato, y a [LeoT121](https://github.com/LeoT121) por ayudarme con el esqueleto del programa.
 
-Basta con descargar el repositorio, e incluir el archivo libkarel.h en su código. Esto le da acceso a la clase `Mundo`, donde fácilmente puede editar las carácterísticas de un mundo de karel en c++. 
+Basta con descargar el repositorio, e incluir el archivo libkarel.h en su código. Esto le da acceso a la clase `MundoKarel`, donde fácilmente puede editar las carácterísticas de un mundo de karel en c++. 
 También, le permite imprimir el mundo en formato XML a cualquier archivo, para ser usado en karel.js, omegaup u otras plataformas.
 Estas son las propiedades que te permite modificar la librería (por ahora):
 - `width` = Ancho del mundo. Por default el ancho es 100.
@@ -12,13 +12,13 @@ Estas son las propiedades que te permite modificar la librería (por ahora):
   Estos dos parámetros se inicializan al declarar una variable de tipo MundoKarel, con el constructor de la clase.
 - `xKarel` = Coordenada x de karel. Por default es 1.
 - `yKarel` = Coordenada y de karel. Por default es 1.
-- `direccionKarel` = Direccion a la que apunta karel, tiene un valor entero entre 1 y 4. Por default es 0, es decir Norte.
+- `direccionKarel` = Direccion a la que apunta karel, tiene un valor entero entre 0 y 3. Por default es 0, es decir Norte, y los valores continuan en orden anti horario.
 - `mochilakarel` = Cantidad de zumbadores en la mochila de karel al iniciar el mundo. -1 representa infinito.
 - `posicionDump` = Set de arrays, cuyos valores representan las coordenadas que se quiere regresar al evaluador.
 - `instruccionesMaximasAEjecutar` = Las instrucciones máximas a ejecutar. Por default es 10 millones.
 - `longitudDeStack` = La longitud del stack. Por default es 65000.
 - `nombre` = El nombre del mundo. Por default es "mundo_0".
-- `tipo` = Es un índice que representa el tipo de despliegue. Por default es 0, es decir el tipo default es "MUNDO".
+- `tipo` = Es una variable que representa el tipo de despliegue. Por default es 0, es decir el tipo default es "MUNDO".
 - `Tipos` = las strings correspondientes al arreglo anterior.
 - Hay una matriz de `width * height`, llamada `Beepers`, donde `Beepers[x][y]` representa la cantidad de beepers en la posición (x, y).
 - Se puede controlar dicha matriz más fácilmente mediante la función `addBeeper(x, y, c)` que añade c beepers a la posición (x, y).
